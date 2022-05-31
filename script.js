@@ -83,16 +83,6 @@ btnScrollTo.addEventListener('click', (e) => {
 
 ///////////////////////           SMOOTH SCROLLING 2    ///////////////////////////////////////
 
-/*document.querySelectorAll('.nav__link').forEach((x) => {
-  x.addEventListener('click', (e) => {
-    e.preventDefault();
-    const id = x.getAttribute('href');
-    console.log(id)
-    document.querySelector(id).scrollIntoView({behavior: 'smooth'})
-    console.log('link')
-  })
-})*/
-
 //event delegation 
 //1. add event listener to a common parent of element
 //2. determine what element the event originated from
@@ -155,9 +145,8 @@ document.querySelector('.nav__links').addEventListener('click', function(e){ //a
 
 ///////////////////////////////               MENU FADE       ////////////////////////////////
 
-// course wau of doing it
-const handelHover = function(e, c = 'test', d= 'no change'){ //these arguments will not be affected
-  //console.log(this,e, c, d, this.a, this.b, this.f )
+// course way of doing it
+const handelHover = function(e){ //these arguments will not be affected
   if(e.target.classList.contains('nav__link')){
     const link = e.target;
     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
@@ -192,22 +181,13 @@ nav.addEventListener('mouseout', handelHover.bind({a:1}));
 //better performance
 const bound = nav.getBoundingClientRect() //used to get height of nav bar
 const stickyNav = function(entries, observer){
-  //console.log(entries[0].isIntersecting) 
   if(entries[0].isIntersecting){
     nav.classList.remove('sticky');
   }
   else{
     nav.classList.add('sticky');
   }
-  ////with entry
-  //entries.forEach(entry => {
-  //  nav.classList.remove('sticky');
-  //  //console.log(entry)
-  //  if(!entry.isIntersecting){
-  //    console.log(entry)
-  //    nav.classList.add('sticky');
-  //  }
-  //})
+
 };
 
 const options = {
@@ -273,10 +253,7 @@ const sliderr = function(){
   const btnLeft = document.querySelector('.slider__btn--left');
   const btnRight = document.querySelector('.slider__btn--right')
   const dotContainer = document.querySelector('.dots')
-  
-  //slides.forEach( (s,i) => {
-  //  s.style.transform = `translateX(${100*(i)}%)`
-  //})
+
   
   const goToSlide = function(slide){
     slides.forEach( (s,i) => {
