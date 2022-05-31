@@ -209,7 +209,7 @@ const option2 = {
 const reveal = function(entries){
   console.log(entries[0])
   if(entries[0].isIntersecting){
-    entries[0].target.classList.remove('section--hidden');
+    //entries[0].target.classList.remove('section--hidden');
     sectIntrObs.unobserve(entries[0].target)
   }
 }
