@@ -1,2 +1,8 @@
 # Bankist-
-website with Smooth scrolling, tab component, sticky nav, lazy loading, slider component, revealing elements on scroll
+website where i used vanilla javascript to implement
+-Smooth scrolling
+-tab components
+-sticky nav
+-lazy loading
+-slider component
+-revealing elements on scroll
