@@ -63,7 +63,7 @@ document.documentElement.style.setProperty('--color-primary', 'red');*/
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
 
-btnScrollTo.addEventListener('click', (e) => {
+//btnScrollTo.addEventListener('click', (e) => {
   /*const s1cords = section1.getBoundingClientRect();
   //.getboundclient rect is an object of an elements size and relative position
   console.log(section1.getBoundingClientRect())
@@ -75,8 +75,8 @@ btnScrollTo.addEventListener('click', (e) => {
     behavior: 'smooth',
   })
   */
-  section1.scrollIntoView({behavior: 'smooth'});
-})
+  //section1.scrollIntoView({behavior: 'smooth'});
+//})
 ///////////////////////////////
 
 ///////////////////////           SMOOTH SCROLLING 2    ///////////////////////////////////////
