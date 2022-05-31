@@ -33,8 +33,6 @@ btnsOpenModal.forEach((x) => {
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
-console.log(btnsOpenModal)
-
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
@@ -257,7 +255,6 @@ const sliderr = function(){
   
   const goToSlide = function(slide){
     slides.forEach( (s,i) => {
-      console.log(i)
       s.style.transform = `translateX(${100*(i - slide)}%)`
     })
   }
