@@ -368,7 +368,7 @@ const RandomColor = () => `rgb${randomInt(0,255),randomInt(0,255),randomInt(0,25
   console.log('LINK')
 })*/
 document.addEventListener('DOMContentLoaded', function(e){
-  console.log('html loaded')
+  console.log('loaded')
 })
 
 
