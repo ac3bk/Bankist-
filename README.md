@@ -1,4 +1,4 @@
-# Bankist- https://ac3bk.github.io/Bankist-/
+# Bankist- https://woodshyjean.github.io/Bankist-/
 website where i used vanilla javascript to implement
 -Smooth scrolling
 -tab components
